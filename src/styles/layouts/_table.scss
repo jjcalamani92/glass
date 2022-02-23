@@ -1,0 +1,29 @@
+.table{
+    table{
+        text-align: center;
+        width: 100%;
+        thead th {
+            padding: 1.5rem;
+            font-size: 2rem;
+            color: #fff;
+            background-color: #444;
+            width: auto;
+        }
+        tr td{
+            border-bottom: .1rem solid #999;
+            padding: 1.5rem;
+            font-size: 2rem;
+            // color: $text-color-2;
+            width: auto;
+            text-transform: none;
+            
+
+        }
+    }
+    img{
+        height: 5rem;
+    }
+    .name{
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,58 @@
+.about{
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .image{
+            flex: 1 1 42rem;
+            img{
+                width: 100%;
+                border-radius: .5rem;
+            }
+        }
+        .content{
+            flex: 1 1 42rem;
+            h3{
+                font-size: 3.5rem;
+                color: $primaryText;
+            }
+            p{
+                font-size: 1.4rem;
+                line-height: 2;
+                color: $secundaryText;
+                padding: 1rem 0;
+            }
+        }
+    }
+    .icons-container{
+        @include grid(5, 1.5rem);
+        margin-top: 2.5rem;
+        .icons{
+            padding: 3rem 2rem;
+            border-radius: .5rem;
+            border: .2rem solid $black;
+            text-align: center;
+            cursor: pointer;
+            transition: all .5s ease;
+            h3{
+                font-size: 1.7rem;
+            }
+            &:hover{
+                background: $black;
+                transition: all .5s ease;
+                img{
+                    filter: invert(1);
+                    transition: all .3s ease;
+                }
+                h3{
+                    color: $white;
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+}
+
+
+

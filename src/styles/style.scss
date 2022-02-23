@@ -1,0 +1,28 @@
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+
+@import 'layouts/botones';
+@import 'layouts/header';
+@import 'layouts/headingPrimary';
+@import 'layouts/headingSecundary';
+@import 'layouts/headingTertiary';
+@import 'layouts/register';
+@import 'layouts/modal';
+@import 'layouts/table';
+@import 'layouts/form';
+@import 'layouts/footer';
+
+
+@import 'pages/home';
+@import 'pages/about'; 
+
+// @import 'pages/portfolio'; 
+// @import 'pages/services'; 
+@import 'pages/blogs'; 
+@import 'pages/contact'; 
+// @import 'pages/academy'; 
+
+@import 'pages/product'; 
+
+

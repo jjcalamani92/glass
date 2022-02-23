@@ -1,0 +1,53 @@
+.footer{
+
+    .box-container{
+        @include grid(4, 1.5rem);
+
+        .box{
+            h3{
+                font-size: 2.2rem;
+                color:$black;
+                margin-bottom: 1rem;
+            }
+
+            a{
+                display: block;
+                font-size: 1.4rem;
+                color:$primaryText;
+                padding: .6rem 0;
+                transition: all .5s ease;
+                &:hover{
+                    color:$colorPrimary;
+                    transition: all .5s ease;
+                }
+            }
+
+            p{
+                font-size: 1.5rem;
+                color:$primaryText;
+                padding: .6rem 0;
+                i{
+                    color:$secundaryText;
+                    padding-right: .5rem;
+                }
+            }
+
+            form input[type="email"]{
+                width: 100%;
+                padding:1rem 1.2rem;
+                border-radius: .5rem;
+                background: $bgLight;
+                font-size: 1.6rem;
+                text-transform: none;
+                margin:.5rem 0;
+            }
+            .share{
+                display: flex;
+            }
+            .icon{
+                margin-right: 1rem;
+                font-size: 2rem;
+            }
+        }
+    }
+}

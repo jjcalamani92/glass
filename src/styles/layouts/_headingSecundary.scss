@@ -1,0 +1,29 @@
+.heading-t{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    h1{
+        // color: $text-color-1;
+        font-family: 'Nunito', sans-serif;
+        font-size: 4rem;
+        text-transform: capitalize;
+        span{
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: 1rem; left: 0;
+                z-index: -1;
+                // background: $orange;
+                height: 100%;
+                width: 100%;
+                clip-path: polygon(0 90%, 100% 83%, 100% 100%, 0% 100%);
+            }
+        }
+    }
+    
+@include telefono{
+    font-size: 3rem;
+}
+}

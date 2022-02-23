@@ -1,0 +1,29 @@
+.blogs{
+    z-index: 0;
+    .box-container{
+        .box{
+            img{
+                max-width: 100%;
+            }
+            h3{
+                font-size: 3.2rem;
+                padding-top: 1rem;
+                line-height: 2;
+            }
+            p{
+                font-size: 1.7rem;
+                line-height: 2;
+            }
+        }
+    }
+@include tablet {
+    .box-container{
+        .box{
+            h3{
+                font-size: 2.5rem;
+                line-height: 1.7;
+            }
+        }
+    }
+}
+}

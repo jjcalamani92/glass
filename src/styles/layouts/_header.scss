@@ -1,0 +1,130 @@
+.header{
+    position: sticky;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    padding:0 9%;
+    justify-content: space-between;
+    .logo{
+        .icon {
+            font-size: 2rem;
+            color: $colorPrimary;
+            width: 3rem;
+            height: 3rem;
+            line-height: 3rem;
+            justify-content: center;
+            align-items: center;
+            border-radius: .5rem;
+            font-weight: 700;
+            margin-right: .2rem;
+            padding: .5rem;
+        }
+        font-size: 2.5rem;
+        color: $primaryText;
+        text-transform: capitalize;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        span{
+            color: $colorPrimary;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+    }
+    .search-form{
+        width: 20%;
+        height: 5rem;
+        border: $border;
+        overflow: hidden;
+        background: $white;
+        display: flex;
+        align-items: center;
+        border-radius: 2rem;
+        input{
+            font-size: 1.7rem;
+            padding: 0 1.2rem;
+            height: 100%;
+            width: 100%;
+            text-transform: none;
+            color: $secundaryText;
+        }
+        label{
+            display: flex;
+            height: 100%;
+            font-size: 2rem;
+            padding-right: 1.5rem;
+            color: $white;
+            align-items: center;
+            padding: 0 1rem;
+            cursor: pointer;
+            transition: all .3s ease;
+            background: $colorPrimary;
+            .icon{
+                margin: 0 1rem;
+            }
+            &:hover{
+                background: $colorPrimary;
+                transition: all .3s ease;
+            }
+        }
+    }
+    .navbar{
+
+        ul{
+            list-style: none;
+
+            li{
+                position: relative;
+                float: left;
+
+                &:hover ul{
+                    display: block;
+                }
+
+                a{
+                    font-size: 1.7rem;
+                    color:$colorLight;
+                    padding:2rem;
+                    display: block;
+
+                    &:hover{
+                        background: $bgLight;
+                    }
+                }
+
+                ul{
+                    position: absolute;
+                    left:0;
+                    width: 20rem;
+                    background: $white;
+                    display: none;
+
+                    li{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .icons{
+        font-size: 2.5rem;
+        color:#000;
+        display: none;
+        cursor: pointer;
+        
+        .icon{
+            margin-left: .5rem;
+            transition: all .5s ease;
+            &:hover{
+                color:$colorPrimary;
+                transition: all .5s ease;
+            }
+        }
+
+        
+    }
+
+}

@@ -1,0 +1,19 @@
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 2.8rem;
+    font-size: 1.7rem;
+    color:$black;
+    border: .2rem solid $black;
+    background: none;
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: all .5s ease;
+
+    &:hover{
+        background: $black;
+        color:$white;
+        transition: all .5s ease;
+    }
+}
+
